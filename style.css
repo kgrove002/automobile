@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least the height of the viewport */
+}
+
+header {
+    background-image: url("images/background.jpg");
+    background-position: center;
+    text-align: center;
+    padding: 75px;
+    color: white;
+    font-size: 4rem;
+}
+
+.nav {
+    position: sticky;
+    background-color: gray;
+    font-weight: bold;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.container {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 1rem;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.subHeading {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+.text {
+    text-indent: 20px;
+    padding-bottom: 10px;
+}
+
+/* Media Query for mobile */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 2rem; /* Adjust header font size for smaller screens */
+    }
+}
